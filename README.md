@@ -16,12 +16,21 @@ You can view the live site here:
 ## 📂 Repository Structure
 samuelben/
 │
+
 ├── index.html # Primary page (Professional Details)
+
 ├── experience.html # Secondary page (Experience & Qualifications)
+
+├── work.html (Show My project)
+
 ├── style.css # Shared stylesheet for both pages
+
 ├── images/ # Folder for profile and background images
+
 │ ├── profile.jpg
+
 │ └── background.jpg
+
 └── README.md # Project documentation
 
 ## ✨ Features
