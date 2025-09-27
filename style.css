@@ -235,3 +235,18 @@ footer {
   .profile-pic { width: 120px; height: 120px; }
   .dashboard-frame { height: 400px; }
 }
+.dashboard-img {
+      max-width: 400px; 
+      height: auto; 
+      border: 1px solid #ddd; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+      transition: transform 0.2s ease;
+    }
+.dashboard-img:hover {
+      transform: scale(1.03);
+    }
+    figure {
+      text-align: center;
+      margin: 20px 0;
+    }
