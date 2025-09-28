@@ -243,6 +243,9 @@ footer {
       box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
       transition: transform 0.2s ease;
     }
+/* ========================
+   DASHBOARD DESIGN
+======================== */
 .dashboard-img:hover {
       transform: scale(1.03);
     }
@@ -257,3 +260,26 @@ footer {
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+
+/* ========================
+   NAVIGATION  DESIGN
+======================== */
+ nav {
+    display: flex;
+    justify-content: center; /* centers links horizontally */
+    gap: 20px; /* spacing between links */
+    background: #1c1c2e; /* optional background */
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  nav a {
+    color: #fff; /* white text */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #b56987; /* highlight color on hover */
+  }
