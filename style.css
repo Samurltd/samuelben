@@ -154,14 +154,12 @@ ul {
 }
 ul li {
   background: rgba(255, 255, 255, 0.07);
-  padding: 1rem 1.2rem;
-  border-radius: 12px;
+  padding: 0.40rem 1.2rem;
+  border-radius: 100px;
   transition: transform 0.3s ease, background 0.3s ease;
+  font-size: 0.80rem;
 }
-ul li:hover {
-  transform: translateY(-6px);
-  background: rgba(0, 200, 255, 0.15);
-}
+
 
 /* ========================
    BUTTONS
