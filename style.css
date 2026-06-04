@@ -453,7 +453,7 @@ footer {
 }
 
 /* ========================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN (FIXED)
 ======================== */
 @media (max-width: 768px) {
   header h1 { font-size: 2.2rem; }
@@ -462,6 +462,31 @@ footer {
   .dashboard-frame { height: 400px; }
   .card-badge { position: relative; top: 0; right: 0; display: inline-block; margin-bottom: 1rem; }
   
+  /* FIXED: Reduce container outer footprint so it snaps within the screen bounds */
+  .container {
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: auto;
+  }
+
+  /* FIXED: Reduce inner card padding so tags stay inside boundaries */
+  .project-card {
+    padding: 1.25rem;
+  }
+
+  .github-footer-card {
+    padding: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  /* FIXED: Ensure mobile viewports wrap navigation buttons correctly */
+  nav {
+    gap: 12px;
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+  }
+
   .impact-grid {
     flex-direction: column;
     gap: 1rem;
@@ -473,8 +498,6 @@ footer {
   .btn {
     text-align: center;
     width: 100%;
-  }
-  .project-card {
-    padding: 1.25rem;
+    box-sizing: border-box; /* Ensures padding does not break button widths */
   }
 }
