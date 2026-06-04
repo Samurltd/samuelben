@@ -152,7 +152,7 @@ h2 {
 }
 
 /* ========================
-   HIGH-CONVERSION PROJECT CARDS
+   HIGH-CONVERSION EXPERIENCE & PROJECT CARDS
 ======================== */
 .project-card {
   text-align: left;
@@ -162,11 +162,49 @@ h2 {
   padding: 2.5rem;
   margin-bottom: 3.5rem;
   box-shadow: 0 10px 32px rgba(0, 0, 0, 0.2);
+  position: relative; /* For badges positioning */
 }
 
 .project-intro p {
   margin-bottom: 1rem;
   font-size: 1.05rem;
+}
+
+/* Top Card Badges */
+.card-badge {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(0, 200, 255, 0.15);
+  color: #00c8ff;
+  border: 1px solid rgba(0, 200, 255, 0.3);
+  padding: 0.35rem 0.85rem;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Experience Metrics Ribbon Engine */
+.metrics-ribbon {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.metric-pill {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #cfd8dc;
+}
+
+.metric-pill strong {
+  color: #00c8ff;
 }
 
 /* Before vs After Impact Block Architecture */
@@ -356,12 +394,23 @@ ul {
   display: grid;
   gap: 1rem;
 }
+
+/* Default project / home list items */
 ul li {
   background: rgba(255, 255, 255, 0.07);
   padding: 0.40rem 1.2rem;
   border-radius: 100px;
   transition: transform 0.3s ease, background 0.3s ease;
   font-size: 0.80rem;
+}
+
+/* Core Override: Ensures description lines in job cards read beautifully */
+.project-card ul li {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border-radius: 6px !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 1rem !important;
+  border-left: 2px solid rgba(0, 200, 255, 0.3);
 }
 
 .dashboard-frame {
@@ -411,6 +460,8 @@ footer {
   header p { font-size: 1rem; }
   .profile-pic { width: 120px; height: 120px; }
   .dashboard-frame { height: 400px; }
+  .card-badge { position: relative; top: 0; right: 0; display: inline-block; margin-bottom: 1rem; }
+  
   .impact-grid {
     flex-direction: column;
     gap: 1rem;
@@ -422,7 +473,6 @@ footer {
   .btn {
     text-align: center;
     width: 100%;
-    box-sizing: border-radius;
   }
   .project-card {
     padding: 1.25rem;
